@@ -5,11 +5,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+
 }
 
 body {
     background: #1f242d;
-    color: #fff;
+    color:#fff;
 }
 
 *::selection {
@@ -122,7 +124,7 @@ section {
 }
 
 .about .row .info h3 span {
-    color: #eee;
+    color: rgb(232, 244, 1);
     padding: 0 0.5rem;
 }
 
