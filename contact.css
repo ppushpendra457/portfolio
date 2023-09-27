@@ -1,184 +1,85 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-body {
-    background: #1f242d;
-    color: #fff;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="contact.css">
+</head>
 
-*::selection {
-    background: #0ef;
-    color: #1f242d;
-}
+<body>
 
-.header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 10%;
-    background: transparent;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-}
+    <header class="header">
+        <a href="#" class="logo">Pushpendra Tripathi</a>
 
-.logo{
-    font-size: 25px;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
-    cursor: default;
-    opacity: 0;
-    animation: slideRight 1s ease forwards;
-}
+        <nav class="navbar">
+            <a href="index.html" style="--i:1">Home</a>
+            <a href="about.html" style="--i:2">About Me</a>
+            <a href="skills.html" style="--i:3">Skills</a>
+            <a href="contact.html" style="--i:4" class="active">Contact me</a>
+        </nav>
+    </header>
+    <div style="text-align: center; padding-top: 200px;">
+        <h1>
+            How can I <span style="color: yellow;">help you? </span>
+        </h1>
+    </div>
+    <div style="display: flex; justify-content: center">
+        <div style="padding-right: 1100px;">
+            <div class="personal" style=" margin-top: 20px;">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Greater Noida , India</p>
+            </div>
+            <div class="personal" style=" margin-top: 20px;">
+                <i class="fa-solid fa-phone"></i>
+                <p>+91-8700980283</p>
+            </div>
+            <div class="personal" style=" margin-top: 20px;">
+                <i class="fa-solid fa-envelope"></i>
+                <p>ppushpendra457@gmail.com</p>
+            </div>
+            <div class="personal" style=" margin-top: 20px;">
+                <i class="fa-solid fa-globe"></i>
+                <p>www.pushpendratripathi.in </p>
+            </div>
+        </div>
+        <div style="position: absolute;;">
+            <form class="form-style-9">
+                <ul>
+                    <li>
+                        <input type="text" name="field1" class="field-style field-split align-left"
+                            placeholder="Name" />
+                        <input type="email" name="field2" class="field-style field-split align-right"
+                            placeholder="Email" />
 
-.navbar a{
-    display: inline-block;
-    font-size: 18px;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    margin-left: 35px;
-    transition: .3s;
-    opacity: 0;
-    animation: slideTop .5s ease forwards;
-    animation-delay: calc(.2s * var(--i));
-}
+                    </li>
+                    <li>
+                        <input type="text" name="field3" class="field-style field-split align-left"
+                            placeholder="Phone" />
+                    </li>
+                    <li>
+                        <input type="text" name="field3" class="field-style field-full align-none"
+                            placeholder="Subject" />
+                    </li>
+                    <li>
+                        <textarea name="field5" class="field-style" placeholder="Message"></textarea>
+                    </li>
+                    <li>
+                        <input type="submit" value="Send Message" />
+                        <input type="reset" value="Reset" />
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+    </div>
+    </section>
 
-.navbar a:hover,
-.navbar a.active{
-      color: rgb(232, 244, 1);
-}
+</body>
 
-@keyframes slideRight{
-    0%{
-        transform: translateX(-100px);
-        opacity: 0;
-    }
-
-    100%{
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes slideTop{
-    0%{
-        transform: translateY(100px);
-        opacity: 0;
-    }
-
-    100%{
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-
-.form-style-9{
-	max-width: 450px;
-	background: #FAFAFA;
-	padding: 50px;
-    margin-top: 16px;
-    margin-right: auto;
-    margin-bottom: 160px;
-    margin-left: auto;
-	box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
-	border-radius: 10px;
-	border: 6px solid #305A72;
-}
-.form-style-9 ul{
-	padding:0;
-	margin:0;
-	list-style:none;
-}
-.form-style-9 ul li{
-	display: block;
-	margin-bottom: 10px;
-	min-height: 35px;
-}
-.form-style-9 ul li  .field-style{
-	box-sizing: border-box; 
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box; 
-	padding: 8px;
-	outline: none;
-	border: 1px solid #B0CFE0;
-	
-
-}
-
-.form-style-9 ul li  .field-style:focus{
-	box-shadow: 0 0 5px #B0CFE0;
-	border:1px solid #B0CFE0;
-}
-
-.form-style-9 ul li .field-split{
-	width: 49%;
-}
-.form-style-9 ul li .field-full{
-	width: 100%;
-}
-.form-style-9 ul li input.align-left{
-	float:left;
-}
-.form-style-9 ul li input.align-right{
-	float:right;
-}
-.form-style-9 ul li textarea{
-	width: 100%;
-	height: 100px;
-}
-.form-style-9 ul li input[type="button"], 
-.form-style-9 ul li input[type="submit"],
-.form-style-9 ul li input[type="reset"] {
-	-moz-box-shadow: inset 0px 1px 0px 0px #3985B1;
-	-webkit-box-shadow: inset 0px 1px 0px 0px #3985B1;
-	box-shadow: inset 0px 1px 0px 0px #3985B1;
-	background-color: #216288;
-	border: 1px solid #17445E;
-	display: inline-block;
-	cursor: pointer;
-	color: #FFFFFF;
-	padding: 8px 18px;
-	text-decoration: none;
-	font: 12px Arial, Helvetica, sans-serif;
-}
-.form-style-9 ul li input[type="button"]:hover, 
-.form-style-9 ul li input[type="submit"]:hover,
-.form-style-9 ul li input[type="reset"]:hover {
-	background: linear-gradient(to bottom, #2D77A2 5%, #337DA8 100%);
-	background-color: hsl(202, 43%, 43%);
-}
-.personal{
-    border: 2px solid white;
-    height: 85px;
-    width: 280px;
-    text-align: center;
-    justify-content: center;
-    padding-top: 5px;
-    border-spacing: 5px;
-    border-radius: 40px;
-    font-weight: 600;
-}
-.personal:hover{
-    background-color: yellow;
-    border: 4px solid white;
-    border-radius: 40px;
-    color: black;
-}
-.email{
-    text-decoration: none;
-
-}
-.email:hover{
-    color: black;
-}
-
+</html>
