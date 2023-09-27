@@ -155,5 +155,30 @@ body {
 .form-style-9 ul li input[type="submit"]:hover,
 .form-style-9 ul li input[type="reset"]:hover {
 	background: linear-gradient(to bottom, #2D77A2 5%, #337DA8 100%);
-	background-color: #28739E;
+	background-color: hsl(202, 43%, 43%);
 }
+.personal{
+    border: 2px solid white;
+    height: 85px;
+    width: 280px;
+    text-align: center;
+    justify-content: center;
+    padding-top: 5px;
+    border-spacing: 5px;
+    border-radius: 40px;
+    font-weight: 600;
+}
+.personal:hover{
+    background-color: yellow;
+    border: 4px solid white;
+    border-radius: 40px;
+    color: black;
+}
+.email{
+    text-decoration: none;
+
+}
+.email:hover{
+    color: black;
+}
+
