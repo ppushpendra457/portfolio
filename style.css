@@ -116,6 +116,7 @@ body {
     opacity: 0;
     animation: zoomIn 1s ease forwards;
     animation-delay: 2s;
+    /* mix-blend-mode:multiply; */
 }
 
 .social-media a {
