@@ -116,6 +116,7 @@ body {
     opacity: 0;
     animation: zoomIn 1s ease forwards;
     animation-delay: 2s;
+    margin-bottom: 86px;
     /* mix-blend-mode:multiply; */
 }
 
@@ -159,6 +160,16 @@ body {
     animation: slideTop 1s ease forwards;
     animation-delay: 2s;
 }
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .home {
+    padding-top: 102px;
+  }
+
 
 /* KEYFRAME ANIMATION */
 
